@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 2.0rem;
+    text-align: center;
+    font-weight: bold;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.aboutme-hr{
+    margin: 15px;
+    width: auto;
+        
+}
+
+pre{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+p{
+    
+    font-size: 1.2rem;
+}
+
+a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+/* navbar starts here */
+.navbar{
+    background-color: teal;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar .navbar-title h1{
+    color: white;
+
+    
+}
+
+.navbar .navbar-links{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3px;
+    margin-bottom: 10px;
+}
+.navbar .navbar-links a{
+    width: 200px;
+    margin:0 auto;
+    margin-top: 4px;
+    color: white;
+    background-color: rgb(3, 163, 163);
+    border-radius: 1000px;
+}
+.navbar .navbar-links a:hover{
+    font-size: x-large;
+    background-color: lightsteelblue;
+    border-radius: 1000px;
+}
+.navbar .navbar-title h1{
+    color: white;
+    padding: 10px;
+    margin: 0;   
+}
+
+.navbar::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* navbar ends here  */
+
+/* profile starts here  */
+
+.profile{
+   padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.desc h1{
+    font-family: 'Satisfy', cursive;
+}
+
+.desc p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile .right-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transition: transform 2s;
+   
+}
+.profile .left-icon{
+    position: absolute;
+    left: 5px;
+    left: 10px;
+    transition: transform 2s;
+}
+
+.profile .right-icon:hover{
+    transform: rotate(360deg);
+    
+}
+.profile .left-icon:hover{
+    transform: rotate(360deg);
+}
+
+/* profile ends here  */
+
+
+/* aboutme starts here  */
+.aboutme{
+    background-color: teal;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+
+}
+.dotted-hr{
+    width: 70px;
+    border: 6px dotted white;
+    border-bottom: none;
+    margin: 0 auto;
+}
+
+.aboutme-img img{
+    width: 200px;
+    height: 220px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.aboutme-desc p {
+    text-align: center;
+}
+
+.cv-download{
+    background-color: linen;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cv-download:hover{
+    background-color: aliceblue;
+
+}
+  
+.aboutme::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* aboutme ends here  */
+
+/* professional experience starts here  */
+.professiona-experience{
+    padding: 1% 0%;
+}
+.professiona-experience .card{
+    background-color: lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    height: 600px;
+}
+
+.card:hover{
+    box-shadow: 0px 4px 8px 5px black;
+}
+
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    width: 100px;
+    margin-top: 15px;
+}
+
+.rounded-image{
+    border: 5px solid whitesmoke;
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card-title h2{
+    background-color: grey;
+    border-radius: 10px;
+}
+.card-desc{
+    margin: 25px;
+}
+.card-desc li{
+    margin-top: 20px;
+}
+
+.skills-container{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-container li{
+    list-style: none;
+    text-transform: uppercase;
+    margin: 50px 0 0 0;
+    font-weight: bolder ;
+}
+
+.progressbar{
+    width: 100%;
+    height: 15px;
+    background-color: rgba(169, 169, 120, 0.5);
+    margin-top: 15px;
+    border-radius: 1000px;
+}
+.progressbar div{
+    width: 0%;
+    height: 15px;
+    background-color: rgba(169, 169, 120,1);
+    margin-top: 15px;
+    border-radius: 1000px;
+}
+.progressbar div span{
+    width: 35px;
+    height: 35px;
+    background-color: lightgrey;
+    padding: 10px;
+    margin-top: -10px;
+    margin-right: -27px;
+    
+    border-radius: 50%;
+    
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.html span{
+    border: 1px solid darkseagreen;
+   
+} 
+
+.html{
+    animation: html 2s 3s linear forwards;
+}
+@keyframes html {
+    to{
+        width: 90%;
+        background-color: darkseagreen;
+    }
+    
+}
+.js span{
+    border: 1px solid darkslateblue;
+   
+} 
+
+.js{
+    animation: js 2s 3s linear forwards;
+}
+@keyframes js {
+    to{
+        width: 40%;
+        background-color: darkslateblue;
+    }
+    
+}
+.css span{
+    border: 1px solid orange;
+   
+} 
+
+.css{
+    animation: css 2s 3s linear forwards;
+}
+@keyframes css {
+    to{
+        width: 80%;
+        background-color: orange;
+    }
+    
+}
+.python span{
+    border: 1px solid indianred;
+   
+} 
+
+.python{
+    animation: python 2s 3s linear forwards;
+}
+@keyframes python {
+    to{
+        width: 60%;
+        background-color: indianred;
+    }
+    
+}
+
+.professiona-experience::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* professional experience ends here */  
+
+/* contact-more starts here*/
+.contact-more{
+    padding: 1% 8%;
+    background-color: lightblue;
+    color: white;
+}
+
+.contact-me{
+    text-align: center;
+}
+.contact-me{
+    text-align: center;
+    
+}
+.contact-me input,textarea{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+.contact-me input,textarea:hover{
+    background-color: whitesmoke;
+    border: none;
+}
+
+.contact-btn{
+    border: none;
+    padding: 5px;
+    background-color: lightslategray;
+    color: whitesmoke;
+    border-radius: 5px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    background-color: lightsteelblue;
+}
+
+
+.more-ways-to{
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+.media-btn{
+    margin: 10px;
+}
+
+.media-btn .button{
+    font-size: 30px;
+    padding: 5px;
+    margin: 40px 10px;
+    border: 2px solid white;
+    border-radius: 30%;
+    
+}
+
+.button:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+
+.contact-more::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/*   contact-more ends here */
+
+/* footer starts here */
+
+.footer{
+    padding: 1% 8%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    
+}
+.footer-menu a{
+    color: white;
+    padding: 6px 0 0 6px;
+}
+
+
+.footer::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* footer ends here */
